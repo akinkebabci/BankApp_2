@@ -1,0 +1,4 @@
+Bank:Albank
+Customer:Abdullah Yavuz 152478 1000
+Customer:Murat Mafya 242478 1500
+Customer:Abdullah Yavuz 432478 1150
