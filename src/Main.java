@@ -108,7 +108,7 @@ public class Main {
                 for (String iban:bank.getCustomers().keySet()) {
                     Customer customer = bank.getCustomers().get(iban);
                     customer.showTransactions();
-                    customer.transactionsLogFile("out.txt");
+                    customer.transactionsLogFile("output.txt");
                 }
 
                 /*for (HashMap.Entry<String, Customer> set : bank.getCustomers().entrySet()) {

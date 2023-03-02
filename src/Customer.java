@@ -77,9 +77,9 @@ public class Customer implements MoneyOperations{
 
     }
 
-    public void transactionsLogFile(String fileName) {
+    public void transactionsLogFile(String path) {
         try {
-            FileWriter writer = new FileWriter(fileName, true);
+            FileWriter writer = new FileWriter(path, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);
 
             for (int i = transactions.size()-1; i >=0 ; i--) {

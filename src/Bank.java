@@ -28,7 +28,7 @@ public class Bank {
         }
     }
 
-/*    public void showTransactions() { //eneski
+/*    public void showTransactions() { //
         for (String transaction : customers.keySet()) {
             transaction = customers.get(transaction).getTransactions().peek();
             System.out.println(customers.get(transaction).getFirstName() + " " + customers.get(transaction).getLastName() + "\n" + transaction);
