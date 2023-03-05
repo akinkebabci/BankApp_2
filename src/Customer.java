@@ -53,6 +53,11 @@ public class Customer implements MoneyOperations{
     public Stack<String> getTransactions() {
         return transactions;
     }
+
+    public void addTransactions(String transactions) {
+        this.transactions.push(transactions);
+    }
+
     @Override
     public void depositMoney(double balance) {
         this.balance += balance;

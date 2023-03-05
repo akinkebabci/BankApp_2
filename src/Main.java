@@ -64,8 +64,10 @@ public class Main {
                 assert bank != null;
                 if (!(bank.isIBAN(arrIBANandBalance[0]))) {
                     try {
-                        Customer customer = bank.getCustomers().get(arrIBANandBalance[0]);
-                        customer.withDrawMoney(castBalance);
+                        bank.withDrawMoney(arrIBANandBalance[0],castBalance);
+
+                       /* Customer customer = bank.getCustomers().get(arrIBANandBalance[0]);
+                        customer.withDrawMoney(castBalance);*/
                     } catch (InsufficientBalanceExceptions e) {
                         System.out.println(e.getMessage());
                     }
@@ -81,8 +83,9 @@ public class Main {
 
                 assert bank != null;
                 if (!(bank.isIBAN(arrIBANandBalance[0]))) {
-                    Customer customerIBAN = bank.getCustomers().get(arrIBANandBalance[0]);
-                    customerIBAN.depositMoney(castBalance);
+                    bank.depositMoney(arrIBANandBalance[0],castBalance);
+                    /*Customer customerIBAN = bank.getCustomers().get(arrIBANandBalance[0]);
+                    customerIBAN.depositMoney(castBalance);*/
                 }
             } else if (input.equals("3")) {
                 System.out.print("Gönderici IBAN / Alıcı IBAN / Tutar Giriniz : ");
